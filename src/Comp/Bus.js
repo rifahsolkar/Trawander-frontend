@@ -6,10 +6,10 @@ export default function Bus(props) {
 
     let [cinfo,setcinfo]=useState([]);
     let data =[
-        { token: localStorage.getItem("token"), from, to, price: '2000'*totalcustomer,date,type:"Bus",typename:'National',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '400'*totalcustomer,date,type:"Bus",typename:'Rajdhani Express',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '700'*totalcustomer,date,type:"Bus",typename:'Kokankanya Express',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '600'*totalcustomer,date,type:"Bus",typename:'Tutari Express',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '2000'*totalcustomer,date,type:"Bus",typename:'VRL Travels',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '400'*totalcustomer,date,type:"Bus",typename:'Neeta Bus',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '700'*totalcustomer,date,type:"Bus",typename:'Shrinath Travels',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '600'*totalcustomer,date,type:"Bus",typename:'HANS TRAVELS ',totalcustomer},
 
 ]
 

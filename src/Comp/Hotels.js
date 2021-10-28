@@ -8,7 +8,7 @@ export default function Hotels(props) {
 
     let [cinfo,setcinfo]=useState([]);
     let data =[
-        { token: localStorage.getItem("token"), from, to, price: '400'*totalcustomer,date,type:"Hotel",images:"./images/kok2.jpg",typename:'HOTEL VIHAR DELUXE Opens in new window',desc: "bcd", totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '400'*totalcustomer,date,type:"Hotel",images:"./images/kok2.jpg",typename:'HOTEL VIHAR DELUXE Opens in new window', totalcustomer},
         { token: localStorage.getItem("token"), from, to, price: '700'*totalcustomer,date,type:"Hotel",images : "./images/kok3.jpg" ,typename:'SEA WINDS',totalcustomer},
         { token: localStorage.getItem("token"), from, to, price: '600'*totalcustomer,date,type:"Hotel",images : "./images/kok4.jpg",typename:'Hotel Shanti Sea View',totalcustomer},
         { token: localStorage.getItem("token"), from, to, price: '3478'*totalcustomer,date,type:"Hotel",images : "./images/kok5.jpg",typename:'Kohinoor Samudra Beach Resort',totalcustomer},
