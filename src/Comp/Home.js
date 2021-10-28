@@ -116,7 +116,7 @@ export default function Home() {
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="d-block w-100%" src="./images/1.jpg" alt="First slide" />
+            <img className="d-block w-100" src="./images/1.jpg" alt="First slide" />
             <div className="carousel-caption d-none d-md-block">
             <h5>Book your Trains </h5>
             <p className="bg-secondary p-4 fs-2">Explore you wanderlust heart with TraWander</p>
