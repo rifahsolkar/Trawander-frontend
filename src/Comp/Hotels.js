@@ -8,40 +8,40 @@ export default function Hotels(props) {
 
     let [cinfo,setcinfo]=useState([]);
     let data =[
-        { token: localStorage.getItem("token"), from, to, price: '400'*totalcustomer,date,type:"Hotel",images:"./images/kok2.jpg",typename:'HOTEL VIHAR DELUXE Opens in new window', totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '700'*totalcustomer,date,type:"Hotel",images : "./images/kok3.jpg" ,typename:'SEA WINDS',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '600'*totalcustomer,date,type:"Hotel",images : "./images/kok4.jpg",typename:'Hotel Shanti Sea View',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3478'*totalcustomer,date,type:"Hotel",images : "./images/kok5.jpg",typename:'Kohinoor Samudra Beach Resort',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3008'*totalcustomer,date,type:"Hotel",images : "./images/chen1.jpg",typename:'The Leela Palace Chennai - Seaside Modern Palace Hotel',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '4078'*totalcustomer,date,type:"Hotel",images : "./images/chen2.jpg",typename:'The Park Chennai',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3000'*totalcustomer,date,type:"Hotel",images : "./images/chen3.jpg",typename:'Hilton Chennai',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '4000'*totalcustomer,date,type:"Hotel",images : "./images/chen4.jpg",typename:'Hotel Pearl International',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3400'*totalcustomer,date,type:"Hotel",images : "./images/chen5.jpg",typename:'Lemon Tree Hotel, Shimona, Chennai',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '2500'*totalcustomer,date,type:"Hotel",images : "./images/delhi1.jpg",typename:'Taj Palace, New Delhi',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3050'*totalcustomer,date,type:"Hotel",images : "./images/delhi2.jpg",typename:'Radisson Blu Plaza Delhi Airport',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3200'*totalcustomer,date,type:"Hotel",images : "./images/delhi3.jpg",typename:'Ajanta Hotel',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '2300'*totalcustomer,date,type:"Hotel",images : "./images/delhi4.jpg",typename:'City Park Resort',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '2000'*totalcustomer,date,type:"Hotel",images : "./images/delhi5.jpg",typename:'De Pavilion Hotel, Delhi',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3500'*totalcustomer,date,type:"Hotel",images : "./images/pune1.jpg",typename:'Royal Orchid Golden Suites',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3200'*totalcustomer,date,type:"Hotel",images : "./images/pune2.jpg",typename:'Lemon Tree Premier Pune',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3100'*totalcustomer,date,type:"Hotel",images : "./images/pune3.jpg",typename:'The Central Park Hotel, Pune',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '2800'*totalcustomer,date,type:"Hotel",images : "./images/pune4.jpg",typename:'JW Marriott Hotel Pune',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '2540'*totalcustomer,date,type:"Hotel",images : "./images/pune5.jpg",typename:'Novotel Pune Nagar Road',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3150'*totalcustomer,date,type:"Hotel",images : "./images/guj1.jpg",typename:'Novotel Ahmedabad',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3700'*totalcustomer,date,type:"Hotel",images : "./images/guj2.jpg",typename:'Vivanta Vadodara',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3200'*totalcustomer,date,type:"Hotel",images : "./images/guj3.jpg",typename:'Lemon Tree Hotel, Ahmedabad',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '2900'*totalcustomer,date,type:"Hotel",images : "./images/guj4.jpg",typename:'Taj Skyline, Ahmedabad',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '2999'*totalcustomer,date,type:"Hotel",images : "./images/guj5.jpg",typename:'Hotel Avista Vadodara',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3499'*totalcustomer,date,type:"Hotel",images : "./images/goa1.jpg",typename:'Sun City Resort',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '2999'*totalcustomer,date,type:"Hotel",images : "./images/goa2.jpg",typename:'Hard Rock Hotel Goa',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '2599'*totalcustomer,date,type:"Hotel",images : "./images/goa3.jpg",typename:'ITC Grand Goa, a Luxury Collection Resort & Spa, Goa',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3000'*totalcustomer,date,type:"Hotel",images : "./images/goa4.png",typename:'Riva Gold Coast',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3800'*totalcustomer,date,type:"Hotel",images : "./images/goa5.jpg",typename:'Lemon Tree Hotel Candolim, Goa',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3200'*totalcustomer,date,type:"Hotel",images : "./images/Mum1.jpg",typename:'Hotel Embassy Park, Mumbai',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '2995'*totalcustomer,date,type:"Hotel",images : "./images/mum2.jpg",typename:'The Royal Orchid',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '3199'*totalcustomer,date,type:"Hotel",images : "./images/mum3.jpg",typename:'The Taj Mahal Palace, Mumba',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '2599'*totalcustomer,date,type:"Hotel",images : "./images/mum4.jpg",typename:'Novotel Mumbai Juhu Beach',totalcustomer},
-        { token: localStorage.getItem("token"), from, to, price: '2190'*totalcustomer,date,type:"Hotel",images : "./images/mum5.png",typename:'ITC Maratha, a Luxury Collection Hotel, Mumbai',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '400'*totalcustomer,date,type:"Hotel",images:"./images/kok2.jpg",typename:'HOTEL VIHAR DELUXE Opens in new window',location:'kolkata', totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '700'*totalcustomer,date,type:"Hotel",images : "./images/kok3.jpg" ,typename:'SEA WINDS',location:'kolkata',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '600'*totalcustomer,date,type:"Hotel",images : "./images/kok4.jpg",typename:'Hotel Shanti Sea View',location:'kolkata',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3478'*totalcustomer,date,type:"Hotel",images : "./images/kok5.jpg",typename:'Kohinoor Samudra Beach Resort',location:'kolkata',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3008'*totalcustomer,date,type:"Hotel",images : "./images/chen1.jpg",typename:'The Leela Palace Chennai - Seaside Modern Palace Hotel',location:'chennai',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '4078'*totalcustomer,date,type:"Hotel",images : "./images/chen2.jpg",typename:'The Park Chennai',location:'chennai',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3000'*totalcustomer,date,type:"Hotel",images : "./images/chen3.jpg",typename:'Hilton Chennai',location:'chennai',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '4000'*totalcustomer,date,type:"Hotel",images : "./images/chen4.jpg",typename:'Hotel Pearl International',location:'chennai',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3400'*totalcustomer,date,type:"Hotel",images : "./images/chen5.jpg",typename:'Lemon Tree Hotel, Shimona, Chennai',location:'chennai',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '2500'*totalcustomer,date,type:"Hotel",images : "./images/delhi1.jpg",typename:'Taj Palace, New Delhi',location:'delhi',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3050'*totalcustomer,date,type:"Hotel",images : "./images/delhi2.jpg",typename:'Radisson Blu Plaza Delhi Airport',location:'delhi',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3200'*totalcustomer,date,type:"Hotel",images : "./images/delhi3.jpg",typename:'Ajanta Hotel',location:'delhi',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '2300'*totalcustomer,date,type:"Hotel",images : "./images/delhi4.jpg",typename:'City Park Resort',location:'delhi',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '2000'*totalcustomer,date,type:"Hotel",images : "./images/delhi5.jpg",typename:'De Pavilion Hotel, Delhi',location:'delhi',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3500'*totalcustomer,date,type:"Hotel",images : "./images/pune1.jpg",typename:'Royal Orchid Golden Suites',location:'pune',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3200'*totalcustomer,date,type:"Hotel",images : "./images/pune2.jpg",typename:'Lemon Tree Premier Pune',location:'pune',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3100'*totalcustomer,date,type:"Hotel",images : "./images/pune3.jpg",typename:'The Central Park Hotel, Pune',location:'pune',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '2800'*totalcustomer,date,type:"Hotel",images : "./images/pune4.jpg",typename:'JW Marriott Hotel Pune',location:'pune',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '2540'*totalcustomer,date,type:"Hotel",images : "./images/pune5.jpg",typename:'Novotel Pune Nagar Road',location:'pune',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3150'*totalcustomer,date,type:"Hotel",images : "./images/guj1.jpg",typename:'Novotel Ahmedabad',location:'gujarat',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3700'*totalcustomer,date,type:"Hotel",images : "./images/guj2.jpg",typename:'Vivanta Vadodara',location:'gujarat',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3200'*totalcustomer,date,type:"Hotel",images : "./images/guj3.jpg",typename:'Lemon Tree Hotel, Ahmedabad',location:'gujarat',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '2900'*totalcustomer,date,type:"Hotel",images : "./images/guj4.jpg",typename:'Taj Skyline, Ahmedabad',location:'gujarat',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '2999'*totalcustomer,date,type:"Hotel",images : "./images/guj5.jpg",typename:'Hotel Avista Vadodara',location:'gujarat',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3499'*totalcustomer,date,type:"Hotel",images : "./images/goa1.jpg",typename:'Sun City Resort',location:'goa',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '2999'*totalcustomer,date,type:"Hotel",images : "./images/goa2.jpg",typename:'Hard Rock Hotel Goa',location:'goa',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '2599'*totalcustomer,date,type:"Hotel",images : "./images/goa3.jpg",typename:'ITC Grand Goa, a Luxury Collection Resort & Spa, Goa',location:'goa',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3000'*totalcustomer,date,type:"Hotel",images : "./images/goa4.png",typename:'Riva Gold Coast',location:'goa',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3800'*totalcustomer,date,type:"Hotel",images : "./images/goa5.jpg",typename:'Lemon Tree Hotel Candolim, Goa',location:'goa',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3200'*totalcustomer,date,type:"Hotel",images : "./images/Mum1.jpg",typename:'Hotel Embassy Park, Mumbai',location:'mumbai',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '2995'*totalcustomer,date,type:"Hotel",images : "./images/mum2.jpg",typename:'The Royal Orchid',location:'mumbai',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '3199'*totalcustomer,date,type:"Hotel",images : "./images/mum3.jpg",typename:'The Taj Mahal Palace, Mumba',location:'mumbai',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '2599'*totalcustomer,date,type:"Hotel",images : "./images/mum4.jpg",typename:'Novotel Mumbai Juhu Beach',location:'mumbai',totalcustomer},
+        { token: localStorage.getItem("token"), from, to, price: '2190'*totalcustomer,date,type:"Hotel",images : "./images/mum5.png",typename:'ITC Maratha, a Luxury Collection Hotel, Mumbai',location:'mumbai',totalcustomer},
     ]
 
     let [searchdata,setsearchdata]=useState([]);
@@ -121,6 +121,7 @@ const handleSubmit = async (e) => {
             {data ? data.map((d) => {
                 return (
                     <>
+                    {d.from===d.location?(
                         <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title my-2"><b>Name:</b> {d.typename}</h5>
@@ -131,7 +132,7 @@ const handleSubmit = async (e) => {
                                 <p className="card-text"><b>Price</b>: {d.price} </p>
                                 <button className="btn btn-danger"  data-toggle="modal" data-target="#trainmodal" onClick={() => setsearchdata([{ token: d.token, from: d.from, to: d.to, date: d.date, totalcustomer: d.totalcustomer, price: d.price,type:d.type, typename: d.typename }])}>Next</button>
                             </div>
-                        </div>
+                        </div>):null }
                     </>
                 )
             }) : null}
