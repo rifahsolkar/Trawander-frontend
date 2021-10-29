@@ -118,10 +118,10 @@ const handleSubmit = async (e) => {
   </div>
 </div>
             <h2 className="text-center">Hotels founds for you</h2>
-            {data ? data.map((d) => {
+            {data ? data.map((d,index) => {
                 return (
                     <>
-                    {d.from===d.location?(
+                    {d.from.toUpperCase()===d.location.toUpperCase()?(
                         <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title my-2"><b>Name:</b> {d.typename}</h5>
@@ -132,7 +132,7 @@ const handleSubmit = async (e) => {
                                 <p className="card-text"><b>Price</b>: {d.price} </p>
                                 <button className="btn btn-danger"  data-toggle="modal" data-target="#trainmodal" onClick={() => setsearchdata([{ token: d.token, from: d.from, to: d.to, date: d.date, totalcustomer: d.totalcustomer, price: d.price,type:d.type, typename: d.typename }])}>Next</button>
                             </div>
-                        </div>):null }
+                        </div>):<h2 className={`nf nf-${index} text-center`}>Hotels Not Found in {d.from}</h2> }
                     </>
                 )
             }) : null}

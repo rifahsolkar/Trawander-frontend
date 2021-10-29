@@ -12,6 +12,16 @@
     cursor: pointer;
 }
 
+.nf{
+display: none;
+    color: rgb(255, 0, 140);
+  }
+
+  .nf-0{ 
+display: block;
+
+color:red;
+  }
 .card-title {
     margin: auto;
     padding: 15px;

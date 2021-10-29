@@ -373,7 +373,7 @@ export default function Home() {
         </>) : null}
 
         {hdata !== '' ? (<>
-       <h2 className="text-center"> This tab is under maintenance will work on it</h2>
+     
           <Hotels location={hdata.location} date={hdata.date} cclass={hdata.cclass} totalcustomer={hdata.totalcustomer} />
         </>) : null}
 
