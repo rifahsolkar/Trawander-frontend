@@ -63,7 +63,7 @@ getMybooking();
  
 
     </div>
-    <p class="mb-1"><b>Customer Name: </b><i>{d.Customer_Name}</i> Happy Jouney :)</p>
+    <p class="mb-1"><b>Customer Name: </b><i>{d.Customer_Name}</i> Happy Journey :)</p>
     <p class="mb-1"><b>Customer Address: </b><i>{d.Customer_Address}</i></p>
     <p class="mb-1"><b>Customer Mobile no: </b><i>{d.Customer_Mobile}</i></p>
     <small> <b>Journey name: </b>{d.TypeName}</small><br/>

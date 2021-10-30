@@ -132,7 +132,7 @@ const handleSubmit = async (e) => {
                                 <p className="card-text"><b>Price</b>: {d.price} </p>
                                 <button className="btn btn-danger"  data-toggle="modal" data-target="#trainmodal" onClick={() => setsearchdata([{ token: d.token, from: d.from, to: d.to, date: d.date, totalcustomer: d.totalcustomer, price: d.price,type:d.type, typename: d.typename }])}>Next</button>
                             </div>
-                        </div>):<h2 className={`nf nf-${index} text-center`}>Hotels Not Found in {d.from}</h2> }
+                        </div>) : null }
                     </>
                 )
             }) : null}
